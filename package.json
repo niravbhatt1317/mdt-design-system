@@ -1,6 +1,6 @@
 {
   "name": "@niravbhatt/mdt-design-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MDT Design System — React component library with Figma-matched tokens",
   "type": "module",
   "main": "./dist/index.cjs",
