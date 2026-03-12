@@ -1,19 +1,50 @@
 {
-  "name": "design-system-experiments",
+  "name": "@niravbhatt/mdt-design-system",
   "version": "0.1.0",
-  "private": true,
+  "description": "MDT Design System — React component library with Figma-matched tokens",
   "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./styles": "./dist/mdt-design-system.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:lib": "tsc --noEmit && vite build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test:storybook": "test-storybook"
+    "test:storybook": "test-storybook",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "components",
+    "ui",
+    "mdt"
+  ],
+  "author": "Nirav Bhatt",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
   },
   "dependencies": {
-    "@fontsource/inter": "^5.2.8",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@fontsource/inter": "^5.2.8"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^8.6.0",
@@ -33,6 +64,7 @@
     "msw-storybook-addon": "^2.0.4",
     "storybook": "^8.6.0",
     "typescript": "^5.6.0",
-    "vite": "^6.0.0"
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.5.4"
   }
 }

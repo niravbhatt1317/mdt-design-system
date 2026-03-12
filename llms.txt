@@ -1,0 +1,235 @@
+# MDT Design System
+
+> A React component library built with TypeScript and Vite, token-matched to a Figma design system.
+> Package: `@niravbhatt/mdt-design-system`
+> Storybook: https://niravbhatt1317.github.io/mdt-design-system/
+> Figma: https://www.figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-
+
+## Installation
+
+```bash
+npm install @niravbhatt/mdt-design-system
+```
+
+Import the stylesheet once at your app entry point:
+
+```tsx
+import '@niravbhatt/mdt-design-system/styles'
+```
+
+## Components
+
+### Button
+
+A multi-variant, accessible button component. Supports all interactive states, icon slots, loading, and skeleton states.
+
+```tsx
+import { Button } from '@niravbhatt/mdt-design-system'
+```
+
+#### Props
+
+| Prop           | Type                                                     | Default     | Description                                              |
+|----------------|----------------------------------------------------------|-------------|----------------------------------------------------------|
+| `variant`      | `'primary' \| 'secondary' \| 'tertiary' \| 'neutral' \| 'link'` | `'primary'` | Visual style of the button                               |
+| `size`         | `'xs' \| 'sm' \| 'md' \| 'lg' \| 'xl'`                 | `'sm'`      | Button size (height: 24/28/32/36/40px)                   |
+| `loading`      | `boolean`                                                | `false`     | Shows spinner, disables interaction, sets `aria-busy`    |
+| `skeleton`     | `boolean`                                                | `false`     | Renders a loading skeleton placeholder                   |
+| `fullWidth`    | `boolean`                                                | `false`     | Stretches button to 100% container width                 |
+| `iconOnly`     | `boolean`                                                | `false`     | Square icon-only layout; use `aria-label` for a11y       |
+| `leadingIcon`  | `ReactNode`                                              | —           | Icon rendered before the label                           |
+| `trailingIcon` | `ReactNode`                                              | —           | Icon rendered after the label                            |
+| `disabled`     | `boolean`                                                | —           | Native disabled state                                    |
+
+All standard `<button>` HTML attributes are also accepted via prop spread.
+
+#### Usage examples
+
+```tsx
+// Basic variants
+<Button variant="primary">Save</Button>
+<Button variant="secondary">Cancel</Button>
+<Button variant="tertiary">Learn more</Button>
+<Button variant="neutral">Options</Button>
+<Button variant="link">View details</Button>
+
+// Sizes
+<Button size="xs">XS</Button>
+<Button size="sm">Small</Button>
+<Button size="md">Medium</Button>
+<Button size="lg">Large</Button>
+<Button size="xl">XL</Button>
+
+// With icons
+<Button leadingIcon={<MyIcon />}>Download</Button>
+<Button trailingIcon={<ChevronIcon />}>Next</Button>
+
+// Icon only (always provide aria-label)
+<Button iconOnly leadingIcon={<PlusIcon />} aria-label="Add item" />
+
+// Loading state
+<Button loading>Saving…</Button>
+
+// Full width
+<Button fullWidth>Submit</Button>
+
+// Disabled
+<Button disabled>Unavailable</Button>
+
+// Skeleton placeholder
+<Button skeleton size="md" />
+```
+
+#### Variant descriptions
+
+- **primary** — High-emphasis action. Dark fill (`#07101f`). Use for the main CTA on a surface.
+- **secondary** — Medium-emphasis. Bordered, transparent background. Use for secondary actions.
+- **tertiary** — Low-emphasis. No border, subtle hover background. Use for supplementary actions.
+- **neutral** — Neutral-tone fill. Use for neutral or cancel actions.
+- **link** — Text-only, link-style appearance. Use for inline navigation or less prominent actions.
+
+#### Loading behaviour
+
+When `loading={true}`:
+- The button is disabled and `aria-busy` is set.
+- If `leadingIcon` is present, it is replaced with a spinner.
+- If no icons are present, a spinner is prepended automatically.
+- If `trailingIcon` is present, it is also replaced with a spinner.
+
+#### Skeleton behaviour
+
+When `skeleton={true}` the component renders a `<div role="presentation" aria-hidden="true">` with animated shimmer styles sized to the button's `size` and `iconOnly` props.
+
+---
+
+## Design Tokens
+
+Tokens are exported as typed JS constants and also available as CSS custom properties via the stylesheet.
+
+### Usage as JS constants
+
+```tsx
+import { colors, semantic, spacing, radii, fontSize } from '@niravbhatt/mdt-design-system'
+
+colors.brand[600]     // '#2563eb'
+spacing[4]            // '16px'
+radii.md              // '8px'
+```
+
+### Color tokens
+
+**Primitive palette**
+
+| Token                  | Value     |
+|------------------------|-----------|
+| `colors.neutral[0]`    | `#ffffff` |
+| `colors.neutral[100]`  | `#f5f5f5` |
+| `colors.neutral[900]`  | `#171717` |
+| `colors.brand[400]`    | `#60a5fa` |
+| `colors.brand[600]`    | `#2563eb` |
+| `colors.brand[700]`    | `#1d4ed8` |
+| `colors.danger[500]`   | `#f43f5e` |
+| `colors.success[500]`  | `#22c55e` |
+
+**Semantic tokens (light theme)**
+
+| Token                          | Value     |
+|-------------------------------|-----------|
+| `semantic.light['bg-default']` | `#ffffff` |
+| `semantic.light['fg-default']` | `#171717` |
+| `semantic.light['accent']`     | `#2563eb` |
+| `semantic.light['danger']`     | `#f43f5e` |
+
+**CSS custom properties** (set by the stylesheet on `:root` and `[data-theme]`)
+
+```css
+--color-bg-default
+--color-bg-subtle
+--color-fg-default
+--color-fg-muted
+--color-border-default
+--color-accent
+--color-accent-hover
+--color-accent-fg
+--color-danger
+--color-danger-hover
+--color-success
+```
+
+Dark mode: set `data-theme="dark"` on any ancestor element.
+
+### Spacing scale (base-4, px)
+
+| Token        | Value  |
+|--------------|--------|
+| `spacing[1]` | `4px`  |
+| `spacing[2]` | `8px`  |
+| `spacing[3]` | `12px` |
+| `spacing[4]` | `16px` |
+| `spacing[6]` | `24px` |
+| `spacing[8]` | `32px` |
+
+### Border radii
+
+| Token       | Value    |
+|-------------|----------|
+| `radii.sm`  | `4px`    |
+| `radii.md`  | `8px`    |
+| `radii.lg`  | `12px`   |
+| `radii.full`| `9999px` |
+
+### Typography
+
+Font: **Inter** (loaded via `@fontsource/inter` at weights 400, 500, 600).
+
+Button-specific typography CSS variables:
+
+```css
+--btn-font-family: 'Inter', sans-serif
+--btn-font-weight: 500
+--btn-xs-font-size: 12px   --btn-xs-line-height: 16px
+--btn-sm-font-size: 13px   --btn-sm-line-height: 16px
+--btn-md-font-size: 14px   --btn-md-line-height: 16px
+--btn-lg-font-size: 14px   --btn-lg-line-height: 20px
+--btn-xl-font-size: 14px   --btn-xl-line-height: 20px
+```
+
+---
+
+## Theming
+
+Apply the `data-theme` attribute to switch themes:
+
+```html
+<html data-theme="dark">…</html>
+<!-- or on any subtree -->
+<div data-theme="dark">…</div>
+```
+
+---
+
+## Accessibility
+
+- `Button` uses native `<button>` — keyboard focusable by default.
+- `loading` sets `aria-busy="true"` and disables the element.
+- `iconOnly` buttons require an `aria-label` (or visually-hidden children).
+- Colour contrast meets WCAG 2.1 AA on both light and dark themes.
+
+---
+
+## Package structure
+
+```
+dist/
+  index.mjs          — ES module build
+  index.cjs          — CommonJS build
+  index.d.ts         — TypeScript declarations
+  mdt-design-system.css — All component styles + tokens
+```
+
+## Peer dependencies
+
+```json
+"react": ">=17",
+"react-dom": ">=17"
+```
