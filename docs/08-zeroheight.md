@@ -133,12 +133,12 @@ The Specs tab shows the design visuals.
 To embed a Storybook story in ZeroHeight, you need the iframe URL format:
 
 ```
-https://niravbhatt1317.github.io/mdt-design-system/iframe.html?id=STORY-ID&viewMode=story
+https://synapse.heynirav.com/iframe.html?id=STORY-ID&viewMode=story
 ```
 
 **How to find the story ID:**
 
-1. Open the deployed Storybook at `niravbhatt1317.github.io/mdt-design-system/`
+1. Open the deployed Storybook at `synapse.heynirav.com`
 2. Navigate to your component (e.g., Components > Badge > Playground)
 3. Look at the URL in your browser — it contains something like:
    ```
@@ -147,7 +147,7 @@ https://niravbhatt1317.github.io/mdt-design-system/iframe.html?id=STORY-ID&viewM
 4. The story ID is: `components-badge--playground`
 5. The iframe URL is:
    ```
-   https://niravbhatt1317.github.io/mdt-design-system/iframe.html?id=components-badge--playground&viewMode=story
+   https://synapse.heynirav.com/iframe.html?id=components-badge--playground&viewMode=story
    ```
 
 **Naming convention for story IDs:**
@@ -167,7 +167,7 @@ components-badge--all-sizes
 
 Example with pre-set args:
 ```
-https://niravbhatt1317.github.io/mdt-design-system/iframe.html?id=components-badge--playground&viewMode=story&args=variant:success
+https://synapse.heynirav.com/iframe.html?id=components-badge--playground&viewMode=story&args=variant:success
 ```
 
 ### Step 6: Add the Code Tab

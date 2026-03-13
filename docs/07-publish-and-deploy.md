@@ -14,7 +14,7 @@ There are two separate systems for sharing this project with the world:
 
 | What | How it's triggered | Where it goes | How fast |
 |------|--------------------|---------------|----------|
-| Storybook documentation | Automatic — any push to `main` | `niravbhatt1317.github.io/mdt-design-system/` | ~1–2 minutes |
+| Storybook documentation | Automatic — any push to `main` | `synapse.heynirav.com` | ~1–2 minutes |
 | npm package | Manual — you run `npm publish` | `npmjs.com/package/@niravbhatt/mdt-design-system` | Immediate |
 
 These are independent. You can push to GitHub without publishing to npm (the docs update but consumers don't get new components). You can publish to npm without pushing to GitHub first (not recommended — always push first).
@@ -48,7 +48,7 @@ While the deployment is running:
 ### How to Verify It Worked
 
 After the workflow completes (green checkmark):
-1. Open `niravbhatt1317.github.io/mdt-design-system/` in your browser
+1. Open `synapse.heynirav.com` in your browser
 2. Hard refresh: `Cmd+Shift+R` (forces the browser to fetch the latest version)
 3. You should see your new component in the sidebar
 
@@ -231,7 +231,7 @@ You need to be authenticated with npm to publish. Here's how to set it up.
 1. Go to `npmjs.com` and log in
 2. Click your profile picture → **Access Tokens**
 3. Click **Generate New Token** → **Granular Access Token**
-4. Give it a name like "MDT Design System publish"
+4. Give it a name like "Synapse publish"
 5. Under **Packages and scopes**:
    - Select "Select packages"
    - Choose `@niravbhatt/mdt-design-system`

@@ -1,4 +1,4 @@
-# MDT Design System — Figma MCP Integration Rules
+# Synapse — Figma MCP Integration Rules
 
 This project is the **source repository** for `@niravbhatt/mdt-design-system`. When implementing Figma designs here, always use and extend the components defined in this repo. When consuming the design system in another project, install the npm package.
 
@@ -10,7 +10,7 @@ This project is the **source repository** for `@niravbhatt/mdt-design-system`. W
 - **Framework:** React 18 + TypeScript
 - **Styling:** CSS Modules (no Tailwind, no styled-components)
 - **Build:** Vite (library mode) + vite-plugin-dts
-- **Docs:** Storybook 8.6 at `niravbhatt1317.github.io/mdt-design-system/`
+- **Docs:** Storybook 8.6 at `synapse.heynirav.com`
 - **Guidelines:** `https://motadata.zeroheight.com`
 - **Figma:** `https://www.figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-`
 
@@ -195,7 +195,7 @@ When using **Figma Make** to generate code from this design system's Figma file:
 ### Prompt template for Figma Make
 When starting a Figma Make session, paste this context:
 
-> Use the `@niravbhatt/mdt-design-system` npm package for all UI components. Import styles with `import '@niravbhatt/mdt-design-system/styles'`. Available components: `Button` (variant: primary/secondary/tertiary/neutral/link, size: xs/sm/md/lg/xl). Never hardcode colors — use CSS variables from the stylesheet. Full API: https://niravbhatt1317.github.io/mdt-design-system/
+> Use the `@niravbhatt/mdt-design-system` npm package for all UI components. Import styles with `import '@niravbhatt/mdt-design-system/styles'`. Available components: `Button` (variant: primary/secondary/tertiary/neutral/link, size: xs/sm/md/lg/xl). Never hardcode colors — use CSS variables from the stylesheet. Full API: https://synapse.heynirav.com
 
 ---
 

@@ -1,6 +1,6 @@
 # 02 — Machine Setup: Setting Up Your Mac From Scratch
 
-This guide walks you through every step needed to set up a brand-new Mac for working on the MDT Design System. If you've already set up some of these tools, you can skip those steps — just use the verification commands to check what you have.
+This guide walks you through every step needed to set up a brand-new Mac for working on the Synapse. If you've already set up some of these tools, you can skip those steps — just use the verification commands to check what you have.
 
 **Time estimate:** 30–60 minutes for a fresh Mac.
 

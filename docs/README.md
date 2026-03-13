@@ -1,4 +1,4 @@
-# MDT Design System — Documentation
+# Synapse — Documentation
 
 > A React component library that gives any AI tool a consistent set of UI components, design tokens, and rules — so you get the same visual output whether you're building in Figma Make, Claude Code, Cursor, v0, or anywhere else.
 
@@ -21,8 +21,8 @@
        │
        ├──► git push → GitHub Actions → Storybook (auto-deploy)
        │                                    │
-       │         niravbhatt1317.github.io   │
-       │         /mdt-design-system/ ◄──────┘
+       │         synapse.heynirav.com ◄──────┘
+       │
        │
        └──► npm publish → @niravbhatt/mdt-design-system
                                │
@@ -91,7 +91,7 @@ import { Button } from '@niravbhatt/mdt-design-system'
 | What | Where |
 |------|-------|
 | GitHub repo | `github.com/niravbhatt1317/mdt-design-system` |
-| Storybook | `niravbhatt1317.github.io/mdt-design-system/` |
+| Storybook | `synapse.heynirav.com` |
 | npm package | `npmjs.com/package/@niravbhatt/mdt-design-system` |
 | ZeroHeight | `motadata.zeroheight.com` |
 | Figma file | `figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-` |

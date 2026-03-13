@@ -1,6 +1,6 @@
 # 09 — AI Tools Usage: How to Use AI Tools With This Design System
 
-This guide covers how to use AI tools effectively with the MDT Design System: Claude Code for implementing components, Figma Make for generating screens, and how to give any AI tool the context it needs to work with the package.
+This guide covers how to use AI tools effectively with the Synapse: Claude Code for implementing components, Figma Make for generating screens, and how to give any AI tool the context it needs to work with the package.
 
 ---
 
@@ -215,7 +215,7 @@ Available components:
 - Button: variant (primary/secondary/tertiary/danger/ghost), size (sm/md/lg/xl),
   loading (boolean), disabled (boolean), leftIcon (ReactNode), rightIcon (ReactNode)
 
-Component documentation: https://niravbhatt1317.github.io/mdt-design-system/
+Component documentation: https://synapse.heynirav.com
 
 Rules:
 - Always import components from @niravbhatt/mdt-design-system
@@ -264,7 +264,7 @@ RULES:
 - Use CSS variables (var(--ds-*)) — never hardcode hex colors
 - Import: import { Button, Badge } from '@niravbhatt/mdt-design-system'
 
-DOCUMENTATION: https://niravbhatt1317.github.io/mdt-design-system/
+DOCUMENTATION: https://synapse.heynirav.com
 ```
 
 ### Where to Find llms.txt

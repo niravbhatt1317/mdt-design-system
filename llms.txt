@@ -1,8 +1,8 @@
-# MDT Design System
+# Synapse
 
 > A React component library built with TypeScript and Vite, token-matched to a Figma design system.
 > Package: `@niravbhatt/mdt-design-system`
-> Storybook: https://niravbhatt1317.github.io/mdt-design-system/
+> Storybook: https://synapse.heynirav.com
 > Figma: https://www.figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-
 
 ## Installation

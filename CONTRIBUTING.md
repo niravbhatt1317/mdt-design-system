@@ -1,4 +1,4 @@
-# MDT Design System — Contributor Guide
+# Synapse — Contributor Guide
 
 ## Goal
 A design system that produces **consistent UI output across any AI tool** — Figma Make, Claude Code, Cursor, v0, or any other. One source of truth for components, tokens, and guidelines everywhere.
@@ -30,7 +30,7 @@ ZeroHeight ───────────────────────
 | Resource | URL |
 |----------|-----|
 | GitHub | `github.com/niravbhatt1317/mdt-design-system` |
-| Storybook | `niravbhatt1317.github.io/mdt-design-system/` |
+| Storybook | `synapse.heynirav.com` |
 | npm | `npmjs.com/package/@niravbhatt/mdt-design-system` |
 | ZeroHeight | `motadata.zeroheight.com` |
 | Figma | `figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-` |
@@ -187,7 +187,7 @@ git push origin main
 - Guidelines tab: add usage text
 - Specs tab: embed Storybook story iframe
   ```
-  https://niravbhatt1317.github.io/mdt-design-system/iframe.html?id=components-componentname--playground&viewMode=story
+  https://synapse.heynirav.com/iframe.html?id=components-componentname--playground&viewMode=story
   ```
 - Code tab: add npm install snippet + usage example
 - Update Settings → Code → CSS version number

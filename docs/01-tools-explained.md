@@ -1,6 +1,6 @@
 # 01 — Tools Explained: What Every Tool Does and Why
 
-This guide explains every tool in the MDT Design System project. You don't need to understand all of them deeply to get started — but knowing what each one is for helps you understand why things are built the way they are.
+This guide explains every tool in the Synapse project. You don't need to understand all of them deeply to get started — but knowing what each one is for helps you understand why things are built the way they are.
 
 ---
 
@@ -26,7 +26,7 @@ You can use Figma in the browser or download the desktop app from `figma.com/dow
 
 **What it is:** GitHub is a website that stores your code in the cloud. Think of it like Google Drive, but designed specifically for code. Every change is tracked, every version is saved, and multiple people can work on the same project without overwriting each other's work.
 
-**Why we use it:** GitHub is where the MDT Design System source code lives. It's also where automatic deployments are triggered — every time code is pushed to GitHub, a process automatically builds and publishes the Storybook documentation site.
+**Why we use it:** GitHub is where the Synapse source code lives. It's also where automatic deployments are triggered — every time code is pushed to GitHub, a process automatically builds and publishes the Storybook documentation site.
 
 **When you use it:**
 - To view the codebase in your browser
@@ -161,7 +161,7 @@ import styles from './Button.module.css'
 
 **When you use it:**
 - During development: `npm run storybook` opens it at `http://localhost:6006`
-- The deployed version (auto-updated on every push) is at `niravbhatt1317.github.io/mdt-design-system/`
+- The deployed version (auto-updated on every push) is at `synapse.heynirav.com`
 
 **Key files:**
 - `src/components/Button/Button.stories.tsx` — stories for the Button component
@@ -255,7 +255,7 @@ import styles from './Button.module.css'
 3. Builds the Storybook static site
 4. Deploys it to GitHub Pages
 
-This means the live Storybook documentation at `niravbhatt1317.github.io/mdt-design-system/` is always up to date with the latest code, with no manual steps required.
+This means the live Storybook documentation at `synapse.heynirav.com` is always up to date with the latest code, with no manual steps required.
 
 **When you use it:** It runs automatically. You can monitor it at `github.com/niravbhatt1317/mdt-design-system/actions`.
 
@@ -301,7 +301,7 @@ GitHub (cloud code storage)
 GitHub Actions (automated pipeline)
   |
   +-- [builds Storybook] --> GitHub Pages
-  |     niravbhatt1317.github.io/mdt-design-system/
+  |     synapse.heynirav.com
   |
   | [you run: npm run build:lib + npm publish]
   v

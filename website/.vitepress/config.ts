@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'MDT Design System',
+  title: 'Synapse',
   description:
-    'React component library with Figma-matched tokens — documentation for contributors and AI tools.',
+    'Synapse — React component library with Figma-matched tokens — documentation for contributors and AI tools.',
   srcDir: '../docs',
   outDir: '../dist-docs',
   cleanUrls: true,
@@ -15,10 +15,10 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    siteTitle: 'MDT Design System',
+    siteTitle: 'Synapse',
 
     nav: [
-      { text: 'Storybook', link: 'https://niravbhatt1317.github.io/mdt-design-system/' },
+      { text: 'Storybook', link: 'https://synapse.heynirav.com' },
       { text: 'npm', link: 'https://www.npmjs.com/package/@niravbhatt/mdt-design-system' },
       { text: 'ZeroHeight', link: 'https://motadata.zeroheight.com' },
       { text: 'Figma', link: 'https://www.figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-' },
@@ -73,7 +73,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'MDT Design System — one source of truth for components, tokens, and guidelines.',
+      message: 'Synapse — one source of truth for components, tokens, and guidelines.',
       copyright: 'Built with VitePress',
     },
   },

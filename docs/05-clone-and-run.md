@@ -1,6 +1,6 @@
 # 05 — Clone & Run: Getting the Project Running on Your Machine
 
-This guide walks you through downloading the MDT Design System codebase and running it locally. By the end, you'll have Storybook running in your browser showing all the components.
+This guide walks you through downloading the Synapse codebase and running it locally. By the end, you'll have Storybook running in your browser showing all the components.
 
 **Prerequisites:** Complete [02 — Machine Setup](02-machine-setup.md) before this guide. You need Git, Node.js 20, and npm installed.
 

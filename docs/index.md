@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: MDT Design System
+  name: Synapse
   text: One component library. Every AI tool.
   tagline: React components, design tokens, and rules for consistent UI — whether you are building in Figma Make, Claude Code, Cursor, v0, or anywhere else.
   actions:
@@ -11,7 +11,7 @@ hero:
       link: /README
     - theme: alt
       text: View Storybook
-      link: https://niravbhatt1317.github.io/mdt-design-system/
+      link: https://synapse.heynirav.com
     - theme: alt
       text: ZeroHeight
       link: https://motadata.zeroheight.com

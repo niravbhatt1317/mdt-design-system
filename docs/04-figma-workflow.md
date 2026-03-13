@@ -1,6 +1,6 @@
 # 04 — Figma Workflow: How Designers Work in Figma
 
-This guide explains how Figma is used in the MDT Design System, how to navigate the design file, and — most importantly — how to get the information you need to implement a component in code.
+This guide explains how Figma is used in the Synapse, how to navigate the design file, and — most importantly — how to get the information you need to implement a component in code.
 
 You don't need to be a designer to follow this guide. Developers use Figma constantly: to understand what a component should look like, to find the right CSS values, and to get Figma node URLs for Claude.
 
@@ -36,7 +36,7 @@ Auto Layout is Figma's version of CSS Flexbox. When a frame has Auto Layout, its
 
 ---
 
-## Opening the MDT Design System Figma File
+## Opening the Synapse Figma File
 
 The design file is at:
 ```
@@ -204,7 +204,7 @@ These values are what you use when writing your CSS Module file.
 
 ## How to Check Design Tokens in Figma
 
-Design tokens are the named values behind colors, spacing, and typography. In the MDT Design System, tokens are CSS custom properties that start with `--ds-` or `--color-`.
+Design tokens are the named values behind colors, spacing, and typography. In the Synapse, tokens are CSS custom properties that start with `--ds-` or `--color-`.
 
 ### Finding Tokens in Figma
 

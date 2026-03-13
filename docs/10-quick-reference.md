@@ -10,7 +10,7 @@ This document is a single-page reference for the most common URLs, commands, rul
 |----------|-----|
 | GitHub repository | `github.com/niravbhatt1317/mdt-design-system` |
 | GitHub Actions (CI/CD) | `github.com/niravbhatt1317/mdt-design-system/actions` |
-| Storybook (live docs) | `niravbhatt1317.github.io/mdt-design-system/` |
+| Storybook (live docs) | `synapse.heynirav.com` |
 | npm package | `npmjs.com/package/@niravbhatt/mdt-design-system` |
 | ZeroHeight guidelines | `motadata.zeroheight.com` |
 | Figma design file | `figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-` |
