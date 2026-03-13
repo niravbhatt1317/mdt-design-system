@@ -1,5 +1,5 @@
 {
-  "name": "@niravbhatt/mdt-design-system",
+  "name": "@niravbhatt/synapse-design-system",
   "version": "0.1.1",
   "description": "Synapse — React component library with Figma-matched tokens",
   "type": "module",
@@ -12,7 +12,7 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     },
-    "./styles": "./dist/mdt-design-system.css"
+    "./styles": "./dist/synapse-design-system.css"
   },
   "files": [
     "dist",

@@ -8,10 +8,10 @@ This document is a single-page reference for the most common URLs, commands, rul
 
 | Resource | URL |
 |----------|-----|
-| GitHub repository | `github.com/niravbhatt1317/mdt-design-system` |
-| GitHub Actions (CI/CD) | `github.com/niravbhatt1317/mdt-design-system/actions` |
+| GitHub repository | `github.com/niravbhatt1317/synapse-design-system` |
+| GitHub Actions (CI/CD) | `github.com/niravbhatt1317/synapse-design-system/actions` |
 | Storybook (live docs) | `synapse.heynirav.com` |
-| npm package | `npmjs.com/package/@niravbhatt/mdt-design-system` |
+| npm package | `npmjs.com/package/@niravbhatt/synapse-design-system` |
 | ZeroHeight guidelines | `motadata.zeroheight.com` |
 | Figma design file | `figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-` |
 | Storybook local | `http://localhost:6006` |
@@ -103,7 +103,7 @@ npm publish --access public --ignore-scripts --otp=123456
 npm whoami
 
 # Check what's currently published:
-npm info @niravbhatt/mdt-design-system
+npm info @niravbhatt/synapse-design-system
 ```
 
 ### Claude Code
@@ -224,7 +224,7 @@ These are the non-negotiable rules for this project. Violating them breaks thing
 | Claude can't read Figma | Claude Code plugin not running | In Figma: Plugins → Claude Code → open the panel |
 | Claude can't read Figma | MCP URL mismatch | Check plugin for exact URL, run `claude mcp list` to verify |
 | Claude can't read Figma | MCP not configured | `claude mcp add figma --url http://127.0.0.1:3845/sse` |
-| Storybook deploy failed | Check GitHub Actions logs | Visit `github.com/niravbhatt1317/mdt-design-system/actions` |
+| Storybook deploy failed | Check GitHub Actions logs | Visit `github.com/niravbhatt1317/synapse-design-system/actions` |
 | Storybook deploy failed | TypeScript error that passes locally | Linux is case-sensitive — check all import path casings |
 | Storybook deploy failed | Missing export in src/index.ts | Add `export * from './components/YourComponent'` |
 | Component styles not showing | global.css not imported in Storybook | Check `.storybook/preview.ts` imports global.css |
@@ -232,7 +232,7 @@ These are the non-negotiable rules for this project. Violating them breaks thing
 | Component styles not showing | CSS variable undefined | Check `src/styles/tokens.css` for the variable name |
 | Dark mode not working | Theme not toggling CSS variables | Check if `.storybook/preview.ts` has the dark mode decorator |
 | Dark mode not working | Missing dark mode overrides | Add `[data-theme="dark"] .root { ... }` overrides to your CSS module |
-| npm package styles missing in consumer app | Consumer didn't import the CSS | Tell them: `import '@niravbhatt/mdt-design-system/styles'` |
+| npm package styles missing in consumer app | Consumer didn't import the CSS | Tell them: `import '@niravbhatt/synapse-design-system/styles'` |
 | ZeroHeight code examples look wrong | Outdated CDN version | Update version in ZeroHeight Settings → Code → CSS URL |
 
 ---

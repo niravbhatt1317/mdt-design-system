@@ -19,7 +19,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Storybook', link: 'https://synapse.heynirav.com' },
-      { text: 'npm', link: 'https://www.npmjs.com/package/@niravbhatt/mdt-design-system' },
+      { text: 'npm', link: 'https://www.npmjs.com/package/@niravbhatt/synapse-design-system' },
       { text: 'ZeroHeight', link: 'https://motadata.zeroheight.com' },
       { text: 'Figma', link: 'https://www.figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-' },
     ],
@@ -57,14 +57,14 @@ export default defineConfig({
 
     editLink: {
       pattern:
-        'https://github.com/niravbhatt1317/mdt-design-system/edit/main/docs/:path',
+        'https://github.com/niravbhatt1317/synapse-design-system/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
 
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/niravbhatt1317/mdt-design-system',
+        link: 'https://github.com/niravbhatt1317/synapse-design-system',
       },
     ],
 

@@ -24,7 +24,7 @@
        │         synapse.heynirav.com ◄──────┘
        │
        │
-       └──► npm publish → @niravbhatt/mdt-design-system
+       └──► npm publish → @niravbhatt/synapse-design-system
                                │
                 ┌──────────────┼──────────────┐
                 ▼              ▼              ▼
@@ -54,11 +54,11 @@
 
 ### I just want to use the package in my project
 ```bash
-npm install @niravbhatt/mdt-design-system
+npm install @niravbhatt/synapse-design-system
 ```
 ```tsx
-import '@niravbhatt/mdt-design-system/styles'
-import { Button } from '@niravbhatt/mdt-design-system'
+import '@niravbhatt/synapse-design-system/styles'
+import { Button } from '@niravbhatt/synapse-design-system'
 ```
 → [09 — AI Tools Usage](09-ai-tools-usage.md) — how to use it with any AI tool
 
@@ -90,8 +90,8 @@ import { Button } from '@niravbhatt/mdt-design-system'
 
 | What | Where |
 |------|-------|
-| GitHub repo | `github.com/niravbhatt1317/mdt-design-system` |
+| GitHub repo | `github.com/niravbhatt1317/synapse-design-system` |
 | Storybook | `synapse.heynirav.com` |
-| npm package | `npmjs.com/package/@niravbhatt/mdt-design-system` |
+| npm package | `npmjs.com/package/@niravbhatt/synapse-design-system` |
 | ZeroHeight | `motadata.zeroheight.com` |
 | Figma file | `figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-` |

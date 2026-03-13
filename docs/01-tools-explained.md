@@ -34,7 +34,7 @@ You can use Figma in the browser or download the desktop app from `figma.com/dow
 - To check deployment status in the "Actions" tab
 - To file issues (bug reports, feature requests)
 
-**Where to find it:** `github.com/niravbhatt1317/mdt-design-system`
+**Where to find it:** `github.com/niravbhatt1317/synapse-design-system`
 
 ---
 
@@ -230,9 +230,9 @@ import styles from './Button.module.css'
 
 ---
 
-## 14. npm Package (@niravbhatt/mdt-design-system)
+## 14. npm Package (@niravbhatt/synapse-design-system)
 
-**What it is:** The npm package is the published, installable version of the design system. Any React project can install it with `npm install @niravbhatt/mdt-design-system` and immediately use all the components.
+**What it is:** The npm package is the published, installable version of the design system. Any React project can install it with `npm install @niravbhatt/synapse-design-system` and immediately use all the components.
 
 **Why we use it:** Publishing to npm is how the design system is distributed. Rather than copying component files into every project, teams install the package once and get updates by bumping the version number.
 
@@ -241,7 +241,7 @@ import styles from './Button.module.css'
 - CSS file with all component styles and CSS custom properties
 - TypeScript type definitions for full autocomplete support
 
-**Where to find it:** `npmjs.com/package/@niravbhatt/mdt-design-system`
+**Where to find it:** `npmjs.com/package/@niravbhatt/synapse-design-system`
 
 ---
 
@@ -257,7 +257,7 @@ import styles from './Button.module.css'
 
 This means the live Storybook documentation at `synapse.heynirav.com` is always up to date with the latest code, with no manual steps required.
 
-**When you use it:** It runs automatically. You can monitor it at `github.com/niravbhatt1317/mdt-design-system/actions`.
+**When you use it:** It runs automatically. You can monitor it at `github.com/niravbhatt1317/synapse-design-system/actions`.
 
 ---
 
@@ -307,9 +307,9 @@ GitHub Actions (automated pipeline)
   v
 npm Registry
   |
-  npmjs.com/package/@niravbhatt/mdt-design-system
+  npmjs.com/package/@niravbhatt/synapse-design-system
   |
-  | [teams install: npm install @niravbhatt/mdt-design-system]
+  | [teams install: npm install @niravbhatt/synapse-design-system]
   v
 Consumer Projects (any React app that uses the design system)
 

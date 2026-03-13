@@ -212,12 +212,12 @@ ZeroHeight supports live code examples where visitors can edit code and see the 
 The CSS file is hosted on jsDelivr, a free CDN for npm packages:
 
 ```
-https://cdn.jsdelivr.net/npm/@niravbhatt/mdt-design-system@VERSION/dist/mdt-design-system.css
+https://cdn.jsdelivr.net/npm/@niravbhatt/mdt-design-system@VERSION/dist/synapse-design-system.css
 ```
 
 The `VERSION` part must match the published npm version. When you publish `0.2.0`, the CDN URL becomes:
 ```
-https://cdn.jsdelivr.net/npm/@niravbhatt/mdt-design-system@0.2.0/dist/mdt-design-system.css
+https://cdn.jsdelivr.net/npm/@niravbhatt/mdt-design-system@0.2.0/dist/synapse-design-system.css
 ```
 
 jsDelivr caches files permanently for each version. This means:

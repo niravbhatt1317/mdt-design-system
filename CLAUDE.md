@@ -1,12 +1,12 @@
 # Synapse — Figma MCP Integration Rules
 
-This project is the **source repository** for `@niravbhatt/mdt-design-system`. When implementing Figma designs here, always use and extend the components defined in this repo. When consuming the design system in another project, install the npm package.
+This project is the **source repository** for `@niravbhatt/synapse-design-system`. When implementing Figma designs here, always use and extend the components defined in this repo. When consuming the design system in another project, install the npm package.
 
 ---
 
 ## Project Overview
 
-- **Package:** `@niravbhatt/mdt-design-system@0.1.1`
+- **Package:** `@niravbhatt/synapse-design-system@0.1.1`
 - **Framework:** React 18 + TypeScript
 - **Styling:** CSS Modules (no Tailwind, no styled-components)
 - **Build:** Vite (library mode) + vite-plugin-dts
@@ -178,24 +178,24 @@ Storybook uses `withThemeByDataAttribute` from `@storybook/addon-themes` — the
 When using **Figma Make** to generate code from this design system's Figma file:
 
 1. Figma Make will see the Code Connect mapping for the `Button` component
-2. It should automatically reference `@niravbhatt/mdt-design-system` as the import source
+2. It should automatically reference `@niravbhatt/synapse-design-system` as the import source
 3. Always install the package first in the target project:
    ```bash
-   npm install @niravbhatt/mdt-design-system
+   npm install @niravbhatt/synapse-design-system
    ```
 4. Import the stylesheet once:
    ```tsx
-   import '@niravbhatt/mdt-design-system/styles'
+   import '@niravbhatt/synapse-design-system/styles'
    ```
 5. Use components:
    ```tsx
-   import { Button } from '@niravbhatt/mdt-design-system'
+   import { Button } from '@niravbhatt/synapse-design-system'
    ```
 
 ### Prompt template for Figma Make
 When starting a Figma Make session, paste this context:
 
-> Use the `@niravbhatt/mdt-design-system` npm package for all UI components. Import styles with `import '@niravbhatt/mdt-design-system/styles'`. Available components: `Button` (variant: primary/secondary/tertiary/neutral/link, size: xs/sm/md/lg/xl). Never hardcode colors — use CSS variables from the stylesheet. Full API: https://synapse.heynirav.com
+> Use the `@niravbhatt/synapse-design-system` npm package for all UI components. Import styles with `import '@niravbhatt/synapse-design-system/styles'`. Available components: `Button` (variant: primary/secondary/tertiary/neutral/link, size: xs/sm/md/lg/xl). Never hardcode colors — use CSS variables from the stylesheet. Full API: https://synapse.heynirav.com
 
 ---
 

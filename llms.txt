@@ -1,20 +1,20 @@
 # Synapse
 
 > A React component library built with TypeScript and Vite, token-matched to a Figma design system.
-> Package: `@niravbhatt/mdt-design-system`
+> Package: `@niravbhatt/synapse-design-system`
 > Storybook: https://synapse.heynirav.com
 > Figma: https://www.figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-
 
 ## Installation
 
 ```bash
-npm install @niravbhatt/mdt-design-system
+npm install @niravbhatt/synapse-design-system
 ```
 
 Import the stylesheet once at your app entry point:
 
 ```tsx
-import '@niravbhatt/mdt-design-system/styles'
+import '@niravbhatt/synapse-design-system/styles'
 ```
 
 ## Components
@@ -24,7 +24,7 @@ import '@niravbhatt/mdt-design-system/styles'
 A multi-variant, accessible button component. Supports all interactive states, icon slots, loading, and skeleton states.
 
 ```tsx
-import { Button } from '@niravbhatt/mdt-design-system'
+import { Button } from '@niravbhatt/synapse-design-system'
 ```
 
 #### Props
@@ -109,7 +109,7 @@ Tokens are exported as typed JS constants and also available as CSS custom prope
 ### Usage as JS constants
 
 ```tsx
-import { colors, semantic, spacing, radii, fontSize } from '@niravbhatt/mdt-design-system'
+import { colors, semantic, spacing, radii, fontSize } from '@niravbhatt/synapse-design-system'
 
 colors.brand[600]     // '#2563eb'
 spacing[4]            // '16px'
@@ -224,7 +224,7 @@ dist/
   index.mjs          — ES module build
   index.cjs          — CommonJS build
   index.d.ts         — TypeScript declarations
-  mdt-design-system.css — All component styles + tokens
+  synapse-design-system.css — All component styles + tokens
 ```
 
 ## Peer dependencies

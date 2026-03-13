@@ -4,7 +4,7 @@ This guide explains the two ways changes get shared: automatic deployment of the
 
 **Prerequisites:**
 - Changes implemented and tested locally (see [06 — Implement a Component](06-implement-component.md))
-- npm account with access to publish `@niravbhatt/mdt-design-system`
+- npm account with access to publish `@niravbhatt/synapse-design-system`
 
 ---
 
@@ -15,7 +15,7 @@ There are two separate systems for sharing this project with the world:
 | What | How it's triggered | Where it goes | How fast |
 |------|--------------------|---------------|----------|
 | Storybook documentation | Automatic — any push to `main` | `synapse.heynirav.com` | ~1–2 minutes |
-| npm package | Manual — you run `npm publish` | `npmjs.com/package/@niravbhatt/mdt-design-system` | Immediate |
+| npm package | Manual — you run `npm publish` | `npmjs.com/package/@niravbhatt/synapse-design-system` | Immediate |
 
 These are independent. You can push to GitHub without publishing to npm (the docs update but consumers don't get new components). You can publish to npm without pushing to GitHub first (not recommended — always push first).
 
@@ -40,7 +40,7 @@ Every time you run `git push origin main`, GitHub automatically builds and deplo
 ### How to Monitor the Deployment
 
 While the deployment is running:
-1. Go to `github.com/niravbhatt1317/mdt-design-system/actions`
+1. Go to `github.com/niravbhatt1317/synapse-design-system/actions`
 2. You'll see a workflow run in progress, with a yellow spinning indicator
 3. Click on it to see the detailed logs for each step
 4. When it turns green, the deployment is done
@@ -188,7 +188,7 @@ Flags explained:
 Expected output:
 ```
 npm notice
-npm notice package: @niravbhatt/mdt-design-system@0.2.0
+npm notice package: @niravbhatt/synapse-design-system@0.2.0
 npm notice Tarball Contents
 npm notice 1.2 kB  dist/index.d.ts
 npm notice 18.4 kB dist/mdt-design-system.es.js
@@ -199,7 +199,7 @@ npm notice README.md
 npm notice Tarball Details
 npm notice total files:  6
 npm notice
-+ @niravbhatt/mdt-design-system@0.2.0
++ @niravbhatt/synapse-design-system@0.2.0
 ```
 
 If you have 2FA enabled on your npm account and get prompted for an OTP:
@@ -234,7 +234,7 @@ You need to be authenticated with npm to publish. Here's how to set it up.
 4. Give it a name like "Synapse publish"
 5. Under **Packages and scopes**:
    - Select "Select packages"
-   - Choose `@niravbhatt/mdt-design-system`
+   - Choose `@niravbhatt/synapse-design-system`
    - Set permission to **Read and write**
 6. Under **Two-factor authentication**:
    - Enable "Bypass two-factor authentication" — this means you won't need to enter an OTP code every time you publish
@@ -277,7 +277,7 @@ After publishing a new version, the CDN URL for the CSS file needs to be updated
 
 The CDN URL follows this pattern:
 ```
-https://cdn.jsdelivr.net/npm/@niravbhatt/mdt-design-system@VERSION/dist/mdt-design-system.css
+https://cdn.jsdelivr.net/npm/@niravbhatt/synapse-design-system@VERSION/dist/mdt-design-system.css
 ```
 
 To update it:
@@ -289,11 +289,11 @@ To update it:
 
 For example, change:
 ```
-https://cdn.jsdelivr.net/npm/@niravbhatt/mdt-design-system@0.1.1/dist/mdt-design-system.css
+https://cdn.jsdelivr.net/npm/@niravbhatt/synapse-design-system@0.1.1/dist/mdt-design-system.css
 ```
 To:
 ```
-https://cdn.jsdelivr.net/npm/@niravbhatt/mdt-design-system@0.2.0/dist/mdt-design-system.css
+https://cdn.jsdelivr.net/npm/@niravbhatt/synapse-design-system@0.2.0/dist/mdt-design-system.css
 ```
 
 ---
@@ -310,7 +310,7 @@ Run through this before every publish:
 - [ ] TypeScript shows no errors (check VS Code Problems panel)
 - [ ] All code changes are committed (`git status` shows nothing uncommitted)
 - [ ] Version bump type is correct (patch/minor/major)
-- [ ] After publish: `npm info @niravbhatt/mdt-design-system` shows the new version
+- [ ] After publish: `npm info @niravbhatt/synapse-design-system` shows the new version
 - [ ] After publish: update ZeroHeight CDN URL if CSS changed
 
 ---

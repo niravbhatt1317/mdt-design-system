@@ -15,7 +15,7 @@ git push origin main
         │
         ├─► GitHub Actions → builds Storybook → GitHub Pages (automatic)
         │
-        └─► npm publish (manual) → @niravbhatt/mdt-design-system
+        └─► npm publish (manual) → @niravbhatt/synapse-design-system
 
 Figma file ──► Code Connect ──────────► Figma Make uses <Button> from npm
 CLAUDE.md ───────────────────────────► Claude Code follows conventions
@@ -29,9 +29,9 @@ ZeroHeight ───────────────────────
 
 | Resource | URL |
 |----------|-----|
-| GitHub | `github.com/niravbhatt1317/mdt-design-system` |
+| GitHub | `github.com/niravbhatt1317/synapse-design-system` |
 | Storybook | `synapse.heynirav.com` |
-| npm | `npmjs.com/package/@niravbhatt/mdt-design-system` |
+| npm | `npmjs.com/package/@niravbhatt/synapse-design-system` |
 | ZeroHeight | `motadata.zeroheight.com` |
 | Figma | `figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-` |
 
@@ -224,12 +224,12 @@ dist/
   index.mjs              ← ES module
   index.cjs              ← CommonJS
   index.d.ts             ← TypeScript types
-  mdt-design-system.css  ← all tokens + component styles (6.85 kB)
+  synapse-design-system.css  ← all tokens + component styles (6.85 kB)
   components/Button/     ← Button type declarations
   tokens/                ← Token type declarations
 ```
 
 CDN URL (update version as you publish):
 ```
-https://cdn.jsdelivr.net/npm/@niravbhatt/mdt-design-system@0.1.1/dist/mdt-design-system.css
+https://cdn.jsdelivr.net/npm/@niravbhatt/synapse-design-system@0.1.1/dist/synapse-design-system.css
 ```

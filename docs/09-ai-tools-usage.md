@@ -175,7 +175,7 @@ It generates:
 
 ```tsx
 // What Figma Make generates WITH Code Connect
-import { Button } from '@niravbhatt/mdt-design-system'
+import { Button } from '@niravbhatt/synapse-design-system'
 
 <Button variant="primary" size="md">Submit</Button>
 ```
@@ -203,13 +203,13 @@ Claude will create the Code Connect configuration file and run the `figma connec
 **Starter prompt — paste this at the beginning of every Figma Make session:**
 
 ```
-Use the @niravbhatt/mdt-design-system package for all UI components.
+Use the @niravbhatt/synapse-design-system package for all UI components.
 
 Setup:
-npm install @niravbhatt/mdt-design-system
+npm install @niravbhatt/synapse-design-system
 
 Import styles in your entry file (e.g., main.tsx or App.tsx):
-import '@niravbhatt/mdt-design-system/styles'
+import '@niravbhatt/synapse-design-system/styles'
 
 Available components:
 - Button: variant (primary/secondary/tertiary/danger/ghost), size (sm/md/lg/xl),
@@ -218,7 +218,7 @@ Available components:
 Component documentation: https://synapse.heynirav.com
 
 Rules:
-- Always import components from @niravbhatt/mdt-design-system
+- Always import components from @niravbhatt/synapse-design-system
 - Use CSS variables (var(--ds-*)) for any custom styling — never hardcode hex values
 - Use CSS Modules (.module.css) for custom component styles
 - Never use Tailwind
@@ -227,7 +227,7 @@ Rules:
 **Reviewing Figma Make's output:**
 
 Check that the generated code:
-- Imports `Button` from `@niravbhatt/mdt-design-system` (not a local file)
+- Imports `Button` from `@niravbhatt/synapse-design-system` (not a local file)
 - Uses the correct `variant` prop values (primary, secondary, etc.)
 - Doesn't include hardcoded hex colors
 - Doesn't generate duplicate button components
@@ -240,29 +240,29 @@ If Figma Make doesn't use your design system components, check that Code Connect
 
 ### The Problem
 
-AI tools don't automatically know about your design system. If you open Cursor, v0, Lovable, or ChatGPT and ask it to build a form, it will generate generic code — maybe using Material UI, or Tailwind, or just raw HTML. It won't know your `@niravbhatt/mdt-design-system` package exists.
+AI tools don't automatically know about your design system. If you open Cursor, v0, Lovable, or ChatGPT and ask it to build a form, it will generate generic code — maybe using Material UI, or Tailwind, or just raw HTML. It won't know your `@niravbhatt/synapse-design-system` package exists.
 
 ### The Solution: A Context Block
 
 Paste this block at the start of every session with any AI tool when you want it to use the design system:
 
 ```
-I'm building a React app using a design system package called @niravbhatt/mdt-design-system.
+I'm building a React app using a design system package called @niravbhatt/synapse-design-system.
 
 SETUP:
-npm install @niravbhatt/mdt-design-system
+npm install @niravbhatt/synapse-design-system
 
 In your entry file (main.tsx / App.tsx), add:
-import '@niravbhatt/mdt-design-system/styles'
+import '@niravbhatt/synapse-design-system/styles'
 
 AVAILABLE COMPONENTS:
 [paste the contents of llms.txt from the repo here]
 
 RULES:
-- Always use components from @niravbhatt/mdt-design-system when one is available
+- Always use components from @niravbhatt/synapse-design-system when one is available
 - For custom styles, use CSS Modules (.module.css) — never Tailwind
 - Use CSS variables (var(--ds-*)) — never hardcode hex colors
-- Import: import { Button, Badge } from '@niravbhatt/mdt-design-system'
+- Import: import { Button, Badge } from '@niravbhatt/synapse-design-system'
 
 DOCUMENTATION: https://synapse.heynirav.com
 ```
@@ -357,8 +357,8 @@ Map each Figma variant to the corresponding React prop value.
 **7. Generate a screen using design system components:**
 ```
 Generate a [describe the screen, e.g., "login form"] using only components
-from @niravbhatt/mdt-design-system. Use Button, InputField, Badge as appropriate.
-Import styles with: import '@niravbhatt/mdt-design-system/styles'
+from @niravbhatt/synapse-design-system. Use Button, InputField, Badge as appropriate.
+Import styles with: import '@niravbhatt/synapse-design-system/styles'
 ```
 
 **8. Review code for design system compliance:**

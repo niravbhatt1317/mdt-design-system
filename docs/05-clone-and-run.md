@@ -34,7 +34,7 @@ All four must pass before continuing.
 "Cloning" means downloading the entire project from GitHub to your computer. Run:
 
 ```bash
-git clone https://github.com/niravbhatt1317/mdt-design-system.git
+git clone https://github.com/niravbhatt1317/synapse-design-system.git
 ```
 
 Expected output:
