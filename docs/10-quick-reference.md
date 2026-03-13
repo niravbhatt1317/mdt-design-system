@@ -155,7 +155,7 @@ These are the non-negotiable rules for this project. Violating them breaks thing
 | Use CSS variables for colors | `color: #0052CC` | `color: var(--ds-brand-primary)` |
 | Use CSS Modules | `<div className="badge">` | `<div className={styles.badge}>` |
 | No Tailwind | `className="p-2 bg-blue-500"` | Use `.module.css` |
-| No inline styles | `style={{ color: 'red' }}` | Use `.module.css` |
+| No inline styles | `style=` with object literal | Use `.module.css` |
 | No global.css in components | `import '../styles/global.css'` | Never import this in components |
 
 ### Component Rules

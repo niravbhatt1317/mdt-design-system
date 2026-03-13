@@ -1,0 +1,32 @@
+---
+layout: home
+
+hero:
+  name: MDT Design System
+  text: One component library. Every AI tool.
+  tagline: React components, design tokens, and rules for consistent UI — whether you are building in Figma Make, Claude Code, Cursor, v0, or anywhere else.
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /README
+    - theme: alt
+      text: View Storybook
+      link: https://niravbhatt1317.github.io/mdt-design-system/
+    - theme: alt
+      text: ZeroHeight
+      link: https://motadata.zeroheight.com
+
+features:
+  - icon: 🧩
+    title: For Developers
+    details: Clone the repo, run Storybook, and add new components following the forwardRef + CSS Modules patterns already established in the codebase.
+  - icon: 🎨
+    title: For Designers
+    details: Figma-first workflow with Dev Mode, Code Connect, and live token preview. The Figma file is the source of truth — everything flows from there.
+  - icon: 🤖
+    title: For AI Tools
+    details: llms.txt, CLAUDE.md, and Figma Code Connect make any AI tool — Claude Code, Figma Make, Cursor, v0 — understand this design system automatically.
+  - icon: 📦
+    title: npm Package
+    details: Install @niravbhatt/mdt-design-system and import pre-built components anywhere. CSS tokens and component styles are bundled and ready.
+---
