@@ -6,11 +6,12 @@ This project is the **source repository** for `@niravbhatt/mdt-design-system`. W
 
 ## Project Overview
 
-- **Package:** `@niravbhatt/mdt-design-system@0.1.0`
+- **Package:** `@niravbhatt/mdt-design-system@0.1.1`
 - **Framework:** React 18 + TypeScript
 - **Styling:** CSS Modules (no Tailwind, no styled-components)
 - **Build:** Vite (library mode) + vite-plugin-dts
 - **Docs:** Storybook 8.6 at `niravbhatt1317.github.io/mdt-design-system/`
+- **Guidelines:** `https://motadata.zeroheight.com`
 - **Figma:** `https://www.figma.com/design/A8iOt3oQHHT20N1mSpxnQ1/Components--Copy-`
 
 ---

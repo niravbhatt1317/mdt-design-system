@@ -37,6 +37,9 @@ const preview: Preview = {
         ],
       },
     },
+    zeroheight: {
+      url: 'https://motadata.zeroheight.com',
+    },
   },
 
   // ── Global types (toolbar items) ───────────────────────────────────────────
